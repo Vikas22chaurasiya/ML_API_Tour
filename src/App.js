@@ -29,7 +29,7 @@ function UpdatePrice(event){
 
 
   function handleSubmit(e){
-    
+    const link = `https://zennyrox.pythonanywhere.com/request/?destination=${Dest}&price=${Price}`
 
     e.preventDefault()
     Axios.get(link).then(res=> {console.log(res)
